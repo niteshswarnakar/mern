@@ -3,18 +3,19 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
 import postRoutes from "./routes/posts.js";
+import dotenv from "dotenv";
 
 const app = express();
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
+// * env variables separately placed for security concern
+const process = dotenv.config().parsed;
+const PORT = process.PORT || 8000;
+const CONNECTION_URL = process.CONNECTION_URL;
+
 // * connection to mongodb cloud database
-const CONNECTION_URL =
-  "mongodb+srv://iamnitesh:0727db1113@cluster0.dojsnmr.mongodb.net/?retryWrites=true&w=majority";
-
-const PORT = process.env.PORT || 5000;
-
 mongoose
   .connect(CONNECTION_URL, {
     useNewUrlParser: true,
