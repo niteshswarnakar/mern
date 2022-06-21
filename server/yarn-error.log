@@ -1,0 +1,26 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add create-react-app ./
+
+PATH: 
+  C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\pc\Project\development\Dart\dart-sdk\bin;C:\Android;C:\Windows\System32;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ffmpeg\bin;C:\Program Files\dotnet\;C:\ProgramData\Microsoft\Windows\Start Menu\Programs\CMake;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\pc\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\pc\miniconda3;C:\Users\pc\miniconda3\Library\mingw-w64\bin;C:\Users\pc\miniconda3\Library\usr\bin;C:\Users\pc\miniconda3\Library\bin;C:\Users\pc\miniconda3\Scripts;C:\Users\pc\miniconda3\bin;C:\Users\pc\miniconda3\condabin;C:\Program Files (x86)\VMware\VMware Player\bin;C:\Users\pc\AppData\Local\Programs\Python\Python38-32\Scripts;C:\Users\pc\AppData\Local\Programs\Python\Python38-32;C:\Users\pc\;C:\Users\pc\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\pc\AppData\Roaming\nvm;C:\Program Files\nodejs
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  14.7.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EINVAL: invalid argument, mkdir 'C:\Users\pc\AppData\Local\Yarn\Cache\v6\npm-sers-pc-desktop-webdev-projects-mern-0.0.0-5ce3932b-03a4-4632-9a86-9f7dcd237b23-1655371974614\node_modules\C:\Users\pc\desktop\webdev\projects\mern'
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
