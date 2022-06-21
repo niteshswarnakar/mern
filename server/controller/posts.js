@@ -47,8 +47,8 @@ export const deletePost = async (req, res) => {
   try {
     if (!mongoose.Types.ObjectId.isValid(_id))
       return res.status(404).send("no post with that id");
-    await PostMessage.findByIdAndDelete(_id);
-    res.status(200).send("Post was successfully deleted");
+    const data = await PostMessage.findByIdAndDelete(_id);
+    res.status(200).json(data);
   } catch (error) {
     console.log(error);
   }
@@ -65,5 +65,7 @@ export const likePost = async (req, res) => {
 
     post.save();
     res.status(201).json(post);
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
 };

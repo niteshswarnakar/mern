@@ -34,6 +34,7 @@ export const updatePost = (id, post) => async (dispatch) => {
 export const deletePost = (id) => async (dispatch) => {
   try {
     let { data } = await api.deletePost(id);
+    console.log("response deleted post from backend - ", { data });
     dispatch({ type: "DELETE", payload: data });
   } catch (error) {
     console.log(error);
@@ -42,8 +43,9 @@ export const deletePost = (id) => async (dispatch) => {
 
 export const likePost = (id) => async (dispatch) => {
   try {
-    await api.likePost(id);
-    dispatch({ type: "LIKE", payload: id });
+    const { data } = await api.likePost(id);
+    console.log("liked post data response is -- ", { data });
+    dispatch({ type: "LIKE", payload: data });
   } catch (error) {
     console.log(error);
   }

@@ -32,26 +32,33 @@ const Post = ({ currentId, setCurrentId, post }) => {
           <MoreHorizIcon fontSize="default" />
         </Button>
       </div>
-      <div>
-        <Typography variant="body2" color="textSecondary">
-          {post.tags.map((tag) => `#${tag}`)}
-        </Typography>
-      </div>
+
       <Typography className={classes.title} variant="h6" gutterBottom>
         {post.title}
       </Typography>
       <CardContent>
-        <Typography className={classes.message} variant="h5" gutterBottom>
+        <Typography
+          className={classes.message}
+          variant="body2"
+          color="textSecondary"
+          gutterBottom
+        >
           {post.message}
         </Typography>
       </CardContent>
+      <div>
+        <Typography variant="body2" gutterBottom color="textSecondary">
+          {post.tags.map((tag) => `#${tag} `)}
+        </Typography>
+      </div>
       <CardActions>
         <Button
           size="small"
           color="primary"
           onClick={() => dispatch(likePost(post._id))}
         >
-          <ThumbUpAltIcon fontSize="small" /> Likes {post.likeCount}
+          <ThumbUpAltIcon fontSize="small" />
+          {"  "} Likes {post.likeCount}
         </Button>
         <Button
           size="small"
